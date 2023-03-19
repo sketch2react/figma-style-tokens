@@ -22,6 +22,11 @@ const styleDSize = {
     }
 }
 
+const styleDFont = {
+  font: {
+  }
+}
+
 const styleDShadow = {
     shadow: {
     }
@@ -98,6 +103,9 @@ Object.keys(texts).forEach(key => {
         weight: { value: currentText.fontWeight},
         letterSpacing: { value: currentText.letterSpacing / 16},
     }
+    styleDFont.font[name] = {
+      family: { value: `${currentText.fontFamily}${!!currentText.fontPostScriptName ? ", " + currentText.fontPostScriptName : ""}` }
+    }
 });
 
 Object.keys(grids).forEach(key => {
@@ -113,10 +121,7 @@ Object.keys(grids).forEach(key => {
     };
 });
 
-
-console.log(JSON.stringify({...styleDColor, ...styleDSize}));
-
-fs.writeFileSync(path.join(__dirname, "tokens/tokens.json"), JSON.stringify({...styleDColor, ...styleDSize, ...styleDShadow, ...styleDGrid}));
+fs.writeFileSync(path.join(__dirname, "tokens/tokens.json"), JSON.stringify({...styleDColor, ...styleDSize, ...styleDShadow, ...styleDGrid, ...styleDFont}));
 const StyleDictionary = require('style-dictionary')
 
 StyleDictionary.registerTransform({
@@ -164,9 +169,20 @@ StyleDictionary.registerTransform({
     }
   });
 
+  StyleDictionary.registerTransform({
+    name: 'font',
+    type: 'value',
+    matcher: function(prop) {
+      return prop.attributes.category === 'font';
+    },
+    transformer: function(prop) {
+      return prop.original.value;
+    }
+  });
+
   StyleDictionary.registerTransformGroup({
     name: 'custom/scss',
-    transforms: StyleDictionary.transformGroup['scss'].concat(['size/weight', 'shadow', 'grid/size', 'grid/gutter'])
+    transforms: StyleDictionary.transformGroup['scss'].concat(['size/weight', 'shadow', 'grid/size', 'grid/gutter', 'font'])
   });
 
   const StyleDictionaryExtended = StyleDictionary.extend(path.join(__dirname, 'config.json'));

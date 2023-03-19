@@ -5,5 +5,6 @@ h1 {
     line-height: $size-headlines-h1-line-height;
     font-weight: $size-headlines-h1-weight;
     letter-spacing: $size-headlines-h1-letter-spacing;
-    color: $color-base-ink-darkest;   
+    color: $color-base-ink-darkest;
+    font-family: $font-headlines-h1-family;
 }
