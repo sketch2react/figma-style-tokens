@@ -1,0 +1,9 @@
+@import "variables";
+
+h1 {
+    font-size: $size-headlines-h1-font;
+    line-height: $size-headlines-h1-line-height;
+    font-weight: $size-headlines-h1-weight;
+    letter-spacing: $size-headlines-h1-letter-spacing;
+    color: $color-base-ink-darkest;   
+}
