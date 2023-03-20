@@ -7,4 +7,49 @@ h1 {
   font-family: Fredoka;
 }
 
+h2 {
+  font-size: 4.5rem;
+  line-height: 4.2525000572rem;
+  font-weight: 700;
+  letter-spacing: 0.0013678337rem;
+  color: #090a0a;
+  font-family: Fredoka;
+}
+
+h3 {
+  font-size: 2.75rem;
+  line-height: 3.2257499695rem;
+  font-weight: 250;
+  letter-spacing: 0.0009403856rem;
+  color: #090a0a;
+  font-family: Work Sans, WorkSans-ThinItalic;
+}
+
+h4 {
+  font-size: 2.25rem;
+  line-height: 2.6392500401rem;
+  font-weight: 700;
+  letter-spacing: 0.0007694065rem;
+  color: #090a0a;
+  font-family: Work Sans, WorkSans-Bold;
+}
+
+h5 {
+  font-size: 1.75rem;
+  line-height: 2.0527498722rem;
+  font-weight: 900;
+  letter-spacing: 0rem;
+  color: #090a0a;
+  font-family: Work Sans, WorkSans-Black;
+}
+
+h6 {
+  font-size: 1.75rem;
+  line-height: 2.1175000668rem;
+  font-weight: 700;
+  letter-spacing: 0rem;
+  color: #090a0a;
+  font-family: Fredoka, Fredoka-Bold;
+}
+
 /*# sourceMappingURL=styles.css.map */

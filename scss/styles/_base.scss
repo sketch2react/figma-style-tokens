@@ -8,3 +8,48 @@ h1 {
     color: $color-base-ink-darkest;
     font-family: $font-headlines-h1-family;
 }
+
+h2 {
+    font-size: $size-headlines-h2-font;
+    line-height: $size-headlines-h2-line-height;
+    font-weight: $size-headlines-h2-weight;
+    letter-spacing: $size-headlines-h2-letter-spacing;
+    color: $color-base-ink-darkest;
+    font-family: $font-headlines-h2-family;
+}
+
+h3 {
+    font-size: $size-headlines-h3-font;
+    line-height: $size-headlines-h3-line-height;
+    font-weight: $size-headlines-h3-weight;
+    letter-spacing: $size-headlines-h3-letter-spacing;
+    color: $color-base-ink-darkest;
+    font-family: $font-headlines-h3-family;
+}
+
+h4 {
+    font-size: $size-headlines-h4-font;
+    line-height: $size-headlines-h4-line-height;
+    font-weight: $size-headlines-h4-weight;
+    letter-spacing: $size-headlines-h4-letter-spacing;
+    color: $color-base-ink-darkest;
+    font-family: $font-headlines-h4-family;
+}
+
+h5 {
+    font-size: $size-headlines-h5-font;
+    line-height: $size-headlines-h5-line-height;
+    font-weight: $size-headlines-h5-weight;
+    letter-spacing: $size-headlines-h5-letter-spacing;
+    color: $color-base-ink-darkest;
+    font-family: $font-headlines-h5-family;
+}
+
+h6 {
+    font-size: $size-headlines-h6-font;
+    line-height: $size-headlines-h6-line-height;
+    font-weight: $size-headlines-h6-weight;
+    letter-spacing: $size-headlines-h6-letter-spacing;
+    color: $color-base-ink-darkest;
+    font-family: $font-headlines-h6-family;
+}
